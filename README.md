@@ -9,6 +9,10 @@ Deux obstacles spécifiques à NixOS empêchent la connexion standard :
 1. **`dbus-python` absent** — le script d'installation officiel ne trouve pas le module Python nécessaire pour configurer NetworkManager.
 2. **Certificat CA trop faible** — le vieux certificat CA de l'ECM (2013, RSA 1024 bits) est rejeté par OpenSSL 3.x embarqué dans NixOS.
 
+## Script d'installation
+
+Le script `eduroam-linux-ECM.py` est fourni officiellement par l'ECM via le portail [eduroam CAT](https://cat.eduroam.org/). Il est pré-configuré pour l'Ecole Centrale Méditerranée.
+
 ## Prérequis
 
 - NetworkManager activé sur le système
